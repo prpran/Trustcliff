@@ -1,0 +1,357 @@
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  
+  nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 80px;
+  }
+  nav .logo{
+    background-color: white;
+  
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+  
+  }
+  nav ul li{
+    margin: 0px 5px;
+    padding: 10px 12px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+    padding: 10px;
+  }
+  
+  nav ul li a:hover{
+    border-bottom: 2px solid red;
+  }
+  
+  nav .menu-bar i{
+    color: #040404;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #click{
+    display: none;
+  }
+  @media (max-width:1024px){
+    .logo{
+      margin-left: -60px;
+    }
+    nav .menu-bar i{
+      display: block;
+    }
+    #click:checked ~ .menu-bar i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top:80px;
+      left: -100%;
+      background-color: #ede9e9;
+      height: 100vh;
+      width: 80%;
+      display: block;
+      text-align: center;
+      transition: all 0.5s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      margin: 20px 0;
+    }
+    nav ul li a{
+      font-size: 20px;
+      display: block;
+      font-weight: 600;
+    }
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #F4ECF7;
+    padding-bottom:20px;    
+}
+
+.heading h1{
+    color: red;
+}
+
+.heading p1{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.flex-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+  
+.flex-box {
+    width: 300px; /* Adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #f50808; /* 1px border with a black color */
+    margin: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    color: rgb(19, 19, 71);
+}
+.flex-box p {
+    text-align: left;    
+    align-items: center;
+    flex-direction: column;
+}
+.flex-box h3{
+    color: #2d2d74;
+}
+
+
+.header nav {
+    float: right;
+    padding: 0px;
+    text-decoration: none;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-left: 60px;
+}
+
+
+.container20 {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-left: 60px;
+}
+/* Media queries */
+
+
+.quick-links ul {
+  display: flex;
+  padding: 50px;
+  border-top: 1px solid rgb(155, 151, 151);
+  margin-top: 60px;
+
+}
+
+.quick-links li {
+  display: inline-block;
+margin: 0 40px 0.1px 40px;
+margin-top: -20px;
+}    
+
+.quick-links li a {
+  color: black;
+  text-decoration: none;
+}
+.outer-foot {
+  background-color: #0f0f36;
+  color: white;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+.container20{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  flex: 1; /* Takes up the left side */
+  padding: 80px; /* Adjust as needed for spacing */
+  
+}
+.left-content h2{
+  width: 250%;
+}
+.left-content p{
+  width: 250%;
+}
+
+.right-content {
+display: flex;
+   flex-direction: column;
+flex: 1; /* Takes up the right side */
+    text-align: left; /* Right-align the content in the right div */
+    padding: 100px; /* Adjust as needed for spacing */
+}
+.address-container {
+display: flex;
+  align-items: center;
+flex-direction: row; 
+}
+
+.address-container h4 {
+  margin-left: 20px; /* Adjust margin-left to match the icon width */
+}
+
+.address-container i {
+padding-right: 10px; /* Add 10px padding to the right of the icon */
+color: red; /* Make all icons red */
+}
+.mail-container {
+display: flex;
+align-items: center;
+flex-direction: row; }
+
+.mail-container h4 {
+margin-left: 20px; 
+}
+
+
+.mail-container i {
+padding-right: 10px; /* Add 10px padding to the right of the icon */
+color: red; /* Make all icons red */
+}
+.phone-container {
+display: flex;
+align-items: center;
+flex-direction: row; 
+margin-left: auto;
+margin-top: 47px;
+margin-right: 130px;
+}
+
+.phone-container h4 {
+margin-left: 20px; 
+}
+
+
+.phone-container i {
+padding-right: 10px; /* Add 10px padding to the right of the icon */
+color: red; /* Make all icons red */
+}
+.social-media-tabs {
+list-style: none;
+display: flex;
+align-items: center;
+margin-left: auto;
+
+}
+
+.social-media-tabs li a {
+  color: red;
+  border-radius: 50%; /* Creates a circular shape */
+  padding: 8px; /* Adds padding to the icon for a better visual effect */
+border: 1px solid red; 
+padding-right: 10px;
+}
+
+.social-media-tabs li {
+  margin: 45px; /* Adds 5px of space between each icon */
+margin-left: -35px; 
+margin-top: 15px;
+}
+.right-content2 {
+display: flex;
+   flex-direction: column;
+flex: 1; /* Takes up the right side */
+    text-align: left; /* Right-align the content in the right div */
+    padding:5px; /* Adjust as needed for spacing */
+}
+
+.pill1 {
+  font-size: 12px;
+padding: 0.9em 4em;
+border-radius: 10em;
+border: none;
+background: #cc0000;
+color: white;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+font-family: "Arial";
+font-weight: bold;
+float: left;
+margin-left: auto;
+margin-bottom: 60px;
+background-color: #cc0000;
+width: max-content;
+}
+
+
+
+.footer {
+  width: 100%;
+  position: normal;
+  bottom: 0px;
+}  
+
+.num-block{
+color: #000 !important;
+}
+
+
+@media (max-width: 600px){
+.phone-container{
+  margin-top: 0px;
+}
+
+}
+
+
+@media(max-width: 1024px){
+  .flex-box {
+  width: 100%;
+}
+}
+
+
+
+
+
+@media (max-width: 768px) {   
+  .quick-links ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+	text-align: center;
+	margin-left:-25px;
+  }
+
+  .quick-links li {
+    	margin: 5px;
+  }
+}
